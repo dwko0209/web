@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼을 이용한 회원가입 신청서 작성 만들기</title>
+</head>
+<body>
+    <ul>
+        <li>
+            <label for="uid">아이디</label>
+            <input type="text" id="uid" autofocus placeholder="4자~10자 사이, 공백 없이" required>
+        </li>
+        <li>
+            <label for="unemail">이메일</label>
+            <input type="email" id="unemail" required>
+        </li>
+        <li>
+            <label for="pwd1">비밀번호</label>
+            <input type="password" id="pwd1" placeholder="문자와 숫자, 특수 기호 포함" required>
+        </li>
+        <li>
+            <label for="pwd2">비밀번호 확인</label>
+            <input type="password" id="pwd2" required>
+        </li>
+        <fieldset>
+            <legend>이벤트와 새로운 소식</legend>
+            <input type="radio" name="mailing" id="mailing_y" value="mailing_yes">
+            <label for="mailing_y">메일 수신</label>
+            <input type="radio" name="mailing" id="mailing_n" value="mailing_no" checked>
+            <label for="mailing_n">메일 수신 안함</label>
+            <div>
+                <input type="submit" value="가입하기">
+                <input type="reset" value="취소">
+            </div>
+        </fieldset>
+    </ul>
+</body>
+</html>

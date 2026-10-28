@@ -1,0 +1,39 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: bisque;
+}
+.container{
+    width: 500px;
+    border: 1px solid #fff;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul{
+    list-style: none;
+}
+
+.ul1{
+    background-color: blueviolet;
+    font-family: "Black Han Sans", sans-serif;
+}
+
+.ul2{
+    background-color: azure;
+    font-family: "Bagel Fat One", system-ui;
+}
+.ul3{
+    background-color: aquamarine;
+    font-family: "Single Day", cursive;
+}
+.ul4{
+    background: violet;
+    font-family:  "Cute Font", sans-serif;
+}

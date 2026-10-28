@@ -1,0 +1,16 @@
+@charset "utf-8";
+@import url(./ccs/);
+
+p{
+    font-size: 30px;
+}
+
+.pl{
+    font-family: paper;
+}
+.light{
+    font-weight: 100px;
+}
+.black{
+    font-weight: 300;
+}

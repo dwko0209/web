@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>슬라이드 막대 만들기</title>
+</head>
+<body>
+    <form>
+        <input type="range" min="0" max="100" step="1" value="20">
+    </form>
+
+    <form>
+        <input type="range" min="0" max="100" step="1" value="20" oninput="document.getElementById(selected-value).innerText">
+        <span id="selected-value">20</span>
+    </form>
+</body>
+</html>

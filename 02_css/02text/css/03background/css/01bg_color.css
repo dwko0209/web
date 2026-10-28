@@ -1,0 +1,40 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Ops+One&family=Fredoka:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: blueviolet;
+}
+
+.container{
+    width: 500px;
+    border: 1px solid #fff;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul{
+    list-style: none;
+}
+
+/* 1. hsl / 2.rgb / 3.16진수/ 4.rgba  구글웹폰트 4개 */
+.ul1{
+    background-color:(hsl(338,64%, 38%))
+    font-family: "Black Ops One", system-ui;
+}
+.ul2{
+    background-color: rgb(rgb(131, 39, 39) rgb(57, 174, 57) rgb(35, 35, 169) /)
+    font-family: "Bebas Neue", sans-serif;
+}
+.ul3{
+    background-color: darkcyan;
+    font-family: "Roboto", sans-serif;
+}
+.ul4{
+    background-color: burlywood;
+    font-family: "Roboto", sans-serif;
+}
