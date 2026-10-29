@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform연습</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .con{
+            width: 300px;
+            height: 300px;
+            background: #ccc;
+            position: relative;
+            margin: 400px auto;
+        }
+
+        .con .card{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transition: 2s;
+            transform-origin: top center;
+            transform-style: preserve-3d;
+        }
+
+        .con:hover .card{
+            transform: rotateX(180deg);
+        }
+
+        .face{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .face img{
+            width: 100%; height: 100%;
+            object-fit: cover;
+        }
+
+        .back{
+            background: #ccc;
+            transform: rotateX(180deg);
+        }
+        .hidden{
+            backface-visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="con">
+        <div class="card">
+            <div class="face front hidden"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz9O5yrQo8JDCX3B31I216r6vwJJAtJ2MRVl4dK6aa3g&s=10" alt="송하영 앞면"></div>
+            <div class="face back hidden"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6zhG2UhbFRBo4MubxdQcS9n1KeEMi7o4CJcY8AN2ukQ&s=10" alt="박지원 뒷면"></div>
+
+        </div><!-- //.card -->
+    </div><!-- //.con -->
+</body>
+
+</html>
