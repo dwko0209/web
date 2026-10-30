@@ -65,7 +65,7 @@ img{
     background: url(../../images/seat2.png);
     position: absolute;
     right: 126px;
-    top: 550px;
+    top: 700px;
     animation: seat2Ani 3s  alternate infinite linear;
 }
 
