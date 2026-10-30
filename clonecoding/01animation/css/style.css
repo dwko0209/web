@@ -31,7 +31,7 @@
     clip: rect(0 0 0 0);
     margin: -1px;
     overflow: hidden;
-     animation: skyBg linear 20s infinite;
+    animation: skyBg linear 20s infinite;
 }
 
 body {
@@ -40,8 +40,8 @@ body {
     height: 100vh;
     background: var(--gold_soft);
     overflow: hidden;
-     animation: skyBg linear 20s infinite;
-    }
+    animation: skyBg linear 20s infinite;
+}
 
 @keyframes skyBg {
     0% {
@@ -86,22 +86,154 @@ h1 {
     font-weight: 700;
     line-height: 1;
     text-align: center;
-    text-shadow: 0 12px 36px rgba(255,255,0,0.24)
+    text-shadow: 0 12px 36px rgba(255, 255, 0, 0.24)
 }
 
-section{
+section {
     width: 1000px;
     height: 400px;
-    background: #ccc;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-70%);
+    transform: translate(-50%, -70%);
 }
-section img{
+
+section img {
     position: absolute;
 }
 
-.sky .sun{}
-.sky .cloud1{}
-.sky .cloud2{}
+.sky .sun {
+    top: -150px;
+    left: 50%;
+    margin-left: -110px;
+    transform-origin: center 500px;
+    animation: sunAni linear 20s infinite;
+}
+
+@keyframes sunAni {
+    0% {
+        transform: rotate(-90deg);
+        opacity: 0;
+    }
+
+    25% {
+        transform: rotate(-30deg);
+        opacity: 1;
+    }
+
+    50% {
+        transform: rotate(30deg);
+        opacity: 1;
+    }
+
+    75% {
+        transform: rotate(90deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotate(-90deg);
+        opacity: 0;
+    }
+}
+
+
+.sky .cloud1 {
+    left: 10%;
+    top: -30px;
+    animation: flow linear infinite 10s;
+}
+
+.sky .cloud2 {
+    left: 0;
+    top: 20px;
+    animation: flow linear infinite 20s;
+}
+
+@keyframes flow {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        left: 90%;
+    }
+}
+
+.orbit {
+    bottom: 104px;
+    left: 50%;
+    margin-left: -165px;
+    opacity: .7;
+    animation: rotate linear 20s infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}
+
+.town_night {
+    bottom: 0;
+    left: 40px;
+}
+
+.town_day {
+    bottom: 0;
+    left: 40px;
+    animation: dayAni linear 20s infinite;
+}
+
+@keyframes dayAni {
+    0% {
+        opacity: 0.8;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    99% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.man {
+    bottom: 0;
+    left: 0;
+    animation: flow linear infinite 7s;
+}
+
+.family {
+    bottom: 0;
+    left: 0;
+    animation: flow linear infinite 20s;
+
+}
