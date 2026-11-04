@@ -79,23 +79,24 @@ body {
   margin-left: -300px;
   margin-top: -400px;
   transform-style: preserve-3d;
-  /* animation: cube_rotate 2s linear infinite; */
   animation: cube_rotate 34s linear infinite;
 }
 
-@keyframes cube_rotate{
-    0%{
-        transform: rotateY(0);
-    }
-    100%{
-        transform: rotateY(360deg);
-    }
+@keyframes cube_rotate {
+  0% {
+    transform: rotateY(0);
+  }
+
+  100% {
+    transform: rotateY(360deg);
+  }
 }
-#circle article{
-    position: absolute;
-    inset: 0;
-    outline: 0;
-    backface-visibility: hidden;
+
+#circle article {
+  position: absolute;
+  inset: 0;
+  outline: 0;
+  backface-visibility: hidden;
 }
 
 #circle article h2 {
@@ -498,10 +499,6 @@ body {
     radial-gradient(circle at 90% 20%, rgba(255, 79, 184, 0.16), transparent 34%),
     var(--color_panel_strong);
 }
-
-#circle article.face_7{
-    display: block;
-}
 .tag_group{
   position: relative;
   z-index: 2;
@@ -534,7 +531,6 @@ body {
 }
 
 
-.face_1{transform: rotateY(0deg) translateZ(-764px);}
 .face_1{transform: rotateY(0deg) translateZ(-764px);}
 .face_2{transform: rotateY(45deg) translateZ(-764px);}
 .face_3{transform: rotateY(90deg) translateZ(-764px);}
