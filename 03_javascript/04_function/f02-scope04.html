@@ -17,6 +17,19 @@
             console.log(`sumVar1 함수 내부 i : ${i}`);
         }
         sumVar1();
+        let n2 = 100; //전역변수
+        function sumlet(){
+            let n2 = 10; //지역변수
+            let result2 = 0;
+            for(let z=1; z<=n2; z++){
+                result2 += z;
+            }
+            console.log(`sumlat 함수 내부 result2 : ${result2}`);
+            // console.log(z);
+        }
+        sumlet();
+        console.log(n2);
+        //console.log(i);
     </script>
 </body>
 </html>
