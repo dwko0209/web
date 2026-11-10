@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM</title>
+</head>
+<body>
+    <div id="display"></div>
+    <script>
+        //현재 페이지의 전체 url출력
+        document.write(`<p><b>locattion.herf : </b> ${location.href}</p>`);
+
+        //현재페이지의 호스트 이름과 포트번호 출력
+        document.write(`<p><b>location.host : </b>${location.host}</p>`);
+
+        //http;;...
+        document.write(`<p><b>location.protocol:</b>${location.protocol}</p>`);
+        
+        //이동할 url 변수에 저장
+        let url = 'https://www.youtube.com/@flowyullab';
+
+        //화면에서 실제 사용한 너비 출력
+        //작업표시줄 같은ui영역은 뺀값
+        document.write(`<p><b>screen.availWidth : </b>${screen.availWidth}</p>`);
+        document.write(`<p><b>screen.availHeight:</b>${screen.availHeight}</p>`);
+        document.write(`<p><b>screen.width:</b>${screen.width}</p>`);
+        document.write(`<p><b>screen.height:</b>${screen.height}</p>`);
+    </script>
+    <button type="button" onclick="location.replace(url)">율쌤 유튜브로 바로가기</button>
+</body>
+</html>
