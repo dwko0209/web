@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   const tl2 = gsap.timeline({ paused: true }).to('.panel', {
     x: 200,
     duration: 2,
-    ease: "sine.out",
+    ease: "bounce.out",
   }).to('.panel', {
     rotate: 15,
     scale: 1.2,
