@@ -1124,7 +1124,7 @@ main .more.border:hover {
   border-radius: var(--round);
   flex: 1;
   box-shadow: var(--yul-brand-shadow2);
-  transition: back;
+  transition: background-color .4s;
 }
 .contact .inner article:hover{
   background-color: var(--yul-brand-orange);
